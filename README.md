@@ -1,4 +1,5 @@
-# AI-chatbot
+
+# CODTECH - TASK 3 - AI-chatbot
 # Introduction
 In today’s digital age, where communication is increasingly driven by artificial intelligence (AI) technologies, building your own chatbot has never been more accessible. With the rise of platforms like ChatGPT from OpenAI and powerful libraries such as NLTK (Natural Language Toolkit) in Python, creating a basic Python chatbot has become a straightforward endeavor for aspiring data scientists and developers.
 
