@@ -1,3 +1,12 @@
+**Name:** MD SAMEER ANSARI
+
+**Company:** CODTECH IT SOLUTIONS
+
+**ID:** CT12WDS94
+
+**Domain:** Python Programming
+
+**Duration:** December to March 2024  
 
 # CODTECH - TASK 3 - AI-chatbot
 # Introduction
