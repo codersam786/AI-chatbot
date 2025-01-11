@@ -1,0 +1,52 @@
+import nltk
+from nltk.chat.util import Chat, reflections
+
+# Download necessary NLTK data
+nltk.download('punkt')
+
+# Define pairs of patterns and responses
+pairs = [
+    [
+        r"(hi|hello|hey|good morning|good evening)",
+        ["Hello!", "Hi there!", "Greetings! How can I assist you today?"]
+    ],
+    [
+        r"(what is your name|who are you)",
+        ["I am a chatbot created to assist you. How can I help?", "I'm an NLP chatbot!"]
+    ],
+    [
+        r"(how are you|how are you doing)",
+        ["I'm just a bunch of code, but I'm functioning well. What about you?", "I'm good, thank you!"]
+    ],
+    [
+        r"what (.*) do you (know|offer|provide)",
+        ["I can answer questions related to various topics. Try asking something!"]
+    ],
+    [
+        r"(bye|goodbye|see you later)",
+        ["Goodbye!", "See you later!", "Take care!"]
+    ],
+    [
+        r"(.*)",
+        ["I'm sorry, I don't understand that. Could you please clarify?", "Can you try rephrasing your question?"]
+    ]
+]
+
+# Create a chatbot instance
+chatbot = Chat(pairs, reflections)
+
+# Function to start the chatbot
+def start_chat():
+    print("Chatbot: Hello! Type 'bye' to exit.")
+    while True:
+        user_input = input("You: ").lower()
+        if user_input in ['bye', 'exit', 'quit']:
+            print("Chatbot: Goodbye!")
+            break
+        else:
+            response = chatbot.respond(user_input)
+            print(f"Chatbot: {response}")
+
+# Start the chatbot
+if __name__ == "__main__":
+    start_chat()
